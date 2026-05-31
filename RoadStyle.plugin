@@ -1,0 +1,136 @@
+{
+  "assemblies": {
+    "RoadStyle": {
+      "assembly": "RoadStyle.dll, RoadStyle.PluginHost"
+    }
+  },
+  "actions": {
+    "id_apply_xml_settings": {
+      "cmd": "apply_xml_settings",
+      "title": "Импорт слоёв XML",
+      "description": "Массовое применение XML-конфигурации слоёв к моделям",
+      "icon": "ic_xml_import"
+    },
+    "id_copy_road_settings": {
+      "cmd": "copy_road_settings",
+      "title": "Копирование настроек дорог",
+      "description": "Копирование настроек из эталонной дороги на другие трассы",
+      "icon": "ic_road_copy"
+    },
+    "id_export_xml_settings": {
+      "cmd": "export_xml_settings",
+      "title": "Экспорт слоёв XML",
+      "description": "Экспорт состояний слоёв активной модели в XML-файл",
+      "icon": "ic_xml_export"
+    },
+    "id_save_road_profile": {
+      "cmd": "save_road_profile",
+      "title": "Экспортировать стиль",
+      "description": "Сохранить настройки отображения трассы в файл стиля",
+      "icon": "ic_style_export"
+    },
+    "id_load_road_profile": {
+      "cmd": "load_road_profile",
+      "title": "Импортировать стиль",
+      "description": "Применить стиль отображения к выбранным трассам из файла",
+      "icon": "ic_style_import"
+    },
+    "id_apply_layer_state": {
+      "cmd": "apply_layer_state",
+      "title": "Применить конфигурацию",
+      "description": "Выбрать и применить конфигурацию слоёв ко всем открытым моделям",
+      "icon": "ic_layer_apply"
+    },
+    "id_about_roadstyle": {
+      "cmd": "about_roadstyle",
+      "title": "О модуле RoadStyle",
+      "description": "Информация о модуле RoadStyle",
+      "icon": "about_roadstyle"
+    }
+  },
+  "menubars": {
+    "rbproj": {
+      "items": [
+        {
+          "id": "modules_menu",
+          "title": "Модули"
+        }
+      ]
+    },
+    "rbproj.modules_menu": {
+      "items": [
+        {
+          "id": "configurations_menu",
+          "title": "Конфигурации"
+        }
+      ]
+    },
+    "rbproj.modules_menu.configurations_menu": {
+      "items": [
+        "id_apply_layer_state",
+        "id_apply_xml_settings",
+        "id_export_xml_settings",
+        "-",
+        "id_copy_road_settings",
+        "id_load_road_profile",
+        "id_save_road_profile",
+        "-",
+        "id_about_roadstyle"
+      ]
+    }
+  },
+  "ribbon": {
+    "rbproj": {
+      "items": [
+        {
+          "group": "xml_applier_tab",
+          "title": "Конфигурации"
+        }
+      ]
+    },
+    "rbproj.xml_applier_tab": {
+      "items": [
+        {
+          "group": "xml_layers_group",
+          "title": "Слои"
+        },
+        {
+          "group": "xml_settings_group",
+          "title": "Настройки"
+        }
+      ]
+    },
+    "rbproj.xml_applier_tab.xml_layers_group": {
+      "items": [
+        {
+          "button": "id_apply_layer_state",
+          "size": "large"
+        },
+        {
+          "button": "id_apply_xml_settings",
+          "size": "large"
+        },
+        {
+          "button": "id_export_xml_settings",
+          "size": "large"
+        }
+      ]
+    },
+    "rbproj.xml_applier_tab.xml_settings_group": {
+      "items": [
+        {
+          "button": "id_copy_road_settings",
+          "size": "large"
+        },
+        {
+          "button": "id_load_road_profile",
+          "size": "large"
+        },
+        {
+          "button": "id_save_road_profile",
+          "size": "large"
+        }
+      ]
+    }
+  }
+}

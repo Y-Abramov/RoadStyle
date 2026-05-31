@@ -1,0 +1,7 @@
+{
+  "name": "road-style",
+  "version": "1.0.0",
+  "caption": "RoadStyle",
+  "description": "Управление конфигурациями слоёв и стилями отображения дорог в Topomatic Robur",
+  "author": "Y.I. Abramov"
+}
