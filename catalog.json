@@ -1,0 +1,10 @@
+[
+  {
+    "name":        "road-style",
+    "title":       "RoadStyle",
+    "version":     "1.0.1",
+    "description": "Управление конфигурациями слоёв и стилями отображения дорог. Импорт/экспорт XML, копирование настроек между трассами, быстрое переключение видимости моделей.",
+    "author":      "Yaroslav I. Abramov",
+    "tpm_url":     "https://github.com/Y-Abramov/RoadStyle/releases/download/v1.0.1/RoadStyle-1.0.1.tpm"
+  }
+]
